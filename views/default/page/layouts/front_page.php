@@ -28,6 +28,7 @@ echo elgg_view('elgg_connect/elements/featured');
 
 ?>
 <div class="elgg-landing-page-body">
+	<?php if ($plugin->display_action == "yes") { ?>
 	<div class="elgg-layout-content">
 		<div class="elgg-container action">
 			<div class="elgg-head elgg-layout-header">
@@ -37,7 +38,9 @@ echo elgg_view('elgg_connect/elements/featured');
 				<?php echo $plugin->action_h2; ?>
 			</div>
 		</div>
-	</div>	
+	</div>
+	<?php } ?>
+	<?php if ($plugin->display_members == "yes") { ?>
 	<div class="elgg-layout-content">
 		<div class="elgg-container users">
 			<div class="elgg-head elgg-layout-header">	
@@ -64,6 +67,8 @@ echo elgg_view('elgg_connect/elements/featured');
 			?>
 		</div>
 	</div>
+	<?php } ?>
+	<?php if ($plugin->display_groups == "yes") { ?>
 	<div class="elgg-layout-content">
 		<div class="elgg-container groups">
 			<div class="elgg-head elgg-layout-header">
@@ -100,4 +105,5 @@ echo elgg_view('elgg_connect/elements/featured');
 			?>
 		</div>
 	</div>
+	<?php } ?>
 </div>
