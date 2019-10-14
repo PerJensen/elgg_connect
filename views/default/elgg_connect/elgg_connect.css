@@ -88,7 +88,6 @@ img {
 	max-width: 24rem;
 }
 /* 	featured module */
-.elgg-featured,
 .elgg-featured-container {
 	position: relative;
 	zoom: 1;		
@@ -98,8 +97,10 @@ img {
 	overflow: hidden;
 	background: #FFF;
 }
-.elgg-featured-container img { 
-	width: 100%;
+.slide {
+	background-repeat: no-repeat; 
+	background-position: center center;
+	background-size: cover;
 }
 .elgg-featured-container,
 .elgg-featured-container .slide {
@@ -111,7 +112,7 @@ img {
 	-o-transition: 		all 0.3s;
 	transition: 		all 0.3s;
 }
-.ez-caption {
+.elgg-caption {
 	position: absolute; 
 	top: 11.25rem; 
 	width: 100%;
@@ -127,7 +128,7 @@ img {
 	-o-transition: 		all 0.3s;
 	transition: 		all 0.3s;
 }
-.ez-caption h1 {
+.elgg-caption h1 {
 	color: #F7F1E9;
 	font-size: 4.0rem;
 	line-height: 1;
@@ -139,7 +140,7 @@ img {
 	-o-transition: 		all 0.3s;
 	transition: 		all 0.3s;
 }
-.ez-caption h2 {
+.elgg-caption h2 {
 	color: #FFF;
 	font-weight: normal;
 	font-size: 2.4rem;
@@ -150,7 +151,7 @@ img {
 	-o-transition: 		all 0.3s;
 	transition: 		all 0.3s;
 }
-.ez-caption .elgg-inner {
+.elgg-caption .elgg-inner {
 	text-align: center;
 	width: 100%;
 	position: relative;
@@ -193,14 +194,14 @@ img {
 	.elgg-featured-container .slide {
 		height: 21rem;
 	}
-	.ez-caption {
+	.elgg-caption {
 		top: 6rem; 
 	}
-	.ez-caption h1 {
+	.elgg-caption h1 {
 		font-size: 3.4rem;
 		padding-bottom: .75rem;
 	}
-	.ez-caption h2 {
+	.elgg-caption h2 {
 		font-size: 2.0rem;
 	}
 	#groups-tools {
@@ -222,14 +223,14 @@ img {
 	.elgg-featured-container .slide {
 		height: 15rem;
 	}
-	.ez-caption {
+	.elgg-caption {
 		top: 5rem; 
 	}
-	.ez-caption h1 {
+	.elgg-caption h1 {
 		font-size: 2.4rem;
 		padding-bottom: .5rem;
 	}
-	.ez-caption h2 {
+	.elgg-caption h2 {
 		font-size: 1.6rem;
 	}
 	.elgg-landing-page-body .action {
