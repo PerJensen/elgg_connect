@@ -66,8 +66,8 @@ if ($plugin->display_members == "yes") {
 			break;
 		}
 	}
-	$body = elgg_format_element('div', ['class' => 'elgg-container users'], $header . $items);
-	$users_content = elgg_format_element('div', ['class' => 'elgg-layout-content'], $body);
+	$body = elgg_format_element('div', ['class' => 'elgg-container members'], $header . $items);
+	$members_content = elgg_format_element('div', ['class' => 'elgg-layout-content'], $body);
 }
 // groups list
 if ($plugin->display_groups == "yes") {
@@ -110,4 +110,4 @@ if ($plugin->display_groups == "yes") {
 	
 echo elgg_format_element('div', [
 	'class' => 'elgg-landing-page-body'
-], $action_content . $users_content . $groups_content);
+], $action_content . $members_content . $groups_content);

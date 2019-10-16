@@ -73,6 +73,8 @@ img {
 }
 .elgg-landing-page .elgg-image-block .elgg-image {
 	margin-right: 0;
+	max-height: 10rem;
+	overflow: hidden;
 }
 .elgg-landing-page .elgg-image-block .elgg-body {
 	align-self: center;
@@ -164,6 +166,7 @@ img {
 }
 .groups-profile > .elgg-image {
     margin-right: 0;
+	width: 100%;
 }
 .groups-profile > .elgg-image img {
 	width: 100%;
@@ -181,6 +184,9 @@ img {
 		max-width: 100%;
 		align-items: center;
 		margin-top: 2rem;
+	}
+	.elgg-landing-page .elgg-image-block .elgg-image {
+		max-height: 10.375rem;
 	}
 	.elgg-container.groups .elgg-layout-header {
 		margin-bottom: 0;
@@ -207,7 +213,7 @@ img {
 	#groups-tools {
 		grid-template-columns: none;
 	}
-	.elgg-container.users .elgg-item {
+	.elgg-container.members .elgg-item {
 		flex: 1 0 26%;
 		margin-bottom: 1rem;
 	}
@@ -242,7 +248,7 @@ img {
 	.elgg-landing-page .elgg-layout-header h1 {
 		font-size: 1.6rem;
 	}
-	.elgg-container.users .elgg-item {
+	.elgg-container.members .elgg-item {
 		flex: 1 0 41%;
 	}
 	.elgg-landing-page-body h2 {
