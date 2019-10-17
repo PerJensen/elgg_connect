@@ -16,15 +16,25 @@ img {
 .elgg-river-layout .elgg-avatar-large > a img {
 	width: 20rem;
 }
-.elgg-menu-filter,
-.elgg-tabs {
-    margin-bottom: 1rem;
-}
 .elgg-menu-filter > li,
 .elgg-tabs > li {
 	margin: 0;
 	border-radius: 0;
     flex-grow: 1;
+}
+/* fix: align river selector */
+.elgg-menu-filter,
+.elgg-tabs {
+    margin-bottom: 1rem;
+}
+/* fix: autocomplete padding */
+.elgg-autocomplete-item {
+    padding: .5rem .25rem;
+	line-height: 1.2;
+}
+/* fix: login dropdown bottom links */
+.elgg-menu-login > li > a {
+    padding: 1rem 1rem 0 0;
 }
 /* ***************************************
 	INDEX
@@ -210,6 +220,7 @@ img {
 	.elgg-caption h2 {
 		font-size: 2.0rem;
 	}
+	/* fix: layout break */
 	#groups-tools {
 		grid-template-columns: none;
 	}
@@ -279,7 +290,7 @@ img {
 		line-height: 1.2 !important;
 	}
 	.elgg-layout-header > .elgg-menu-container {
-		padding: 0 0.5rem 0.5rem 0.5rem;
+		padding: 0 0.25rem 0.5rem 0.25rem;
 	}
 	.elgg-layout-sidebar {
 		padding-top: 1rem;
@@ -298,5 +309,18 @@ img {
 	}
 	.elgg-list > li:last-child {
 		border-bottom: none;
+	}
+	/* fix: settings > account info */
+	.elgg-table-alt th:first-child,
+	.elgg-table-alt td:first-child {
+		width: auto;
+	}
+	/* fix: messages buttons */
+	.elgg-fieldset-horizontal.elgg-justify-right .elgg-field {
+		margin: 0 .25rem .25rem;
+	}
+	/* fix: profile double line */
+	.elgg-layout.profile .elgg-sidebar-alt {
+		border: none;
 	}
 }
