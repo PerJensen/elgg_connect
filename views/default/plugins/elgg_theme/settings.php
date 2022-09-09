@@ -4,6 +4,15 @@ $entity = elgg_extract('entity', $vars);
 
 elgg_require_js('elgg_theme/settings');
 
+// walled garden mode
+echo elgg_view_field([
+	'#type' => 'checkbox',
+	'#label' => elgg_echo('elgg_theme:settings:walled_garden'),
+	'name' => 'params[walled_garden]',
+	'checked' => (bool) $entity->walled_garden,
+	'switch' => true,
+]);
+
 //landing page
 echo elgg_view_field([
 	'#type' => 'fieldset',

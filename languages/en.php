@@ -1,6 +1,8 @@
 <?php
 
 return [
+	'elgg_theme:settings:walled_garden' => 'Enable Landing Page on the <a href="http://learn.elgg.org/en/stable/guides/walled-garden.html#activating-walled-garden-mode">walled garden mode</a>',
+	
 	'elgg_theme:settings:landing' => 'Landing Page config',
 	'elgg_theme:settings:landing:caption_h1' => 'Caption header',
 	'elgg_theme:settings:landing:caption_h2' => 'Caption subheader',

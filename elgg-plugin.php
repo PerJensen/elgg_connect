@@ -10,7 +10,7 @@
 return [
 	'plugin' => [
 		'name' => 'Elgg Landing Theme',
-		'version' => '1.0.0',
+		'version' => '1.1.0',
 		'dependencies' => [
 			'activity' => [
 				'position' => 'after',
